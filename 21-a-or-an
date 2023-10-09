@@ -1,8 +1,9 @@
 public String aOrAn(String word) {
-    if (word.startsWithIgnoreCase('a') || word.startsWithIgnoreCase('e') || word.startsWithIgnoreCase('i') || word.startsWithIgnoreCase('o') || word.startsWithIgnoreCase('u')){
+    List String vowels = new List<String>{'a';'e';'i';'o';'u'};
+    for (String vowel : vowels){
+            if (word.startsWithIgnoreCase(vowel)){
         return "an " + word;
     }
-    else {
-        return "a " + word;
     }
+    return "a " + word;
 }
