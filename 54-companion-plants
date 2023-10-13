@@ -5,6 +5,12 @@ public Boolean companionPlants(String plant1, String plant2) {
     else if (plant1 == 'onions' && (plant2 == 'carrots' || plant2 == 'tomatoes')){
         return true;
     }
+    else if (plant2 == 'lettuce' && (plant1 == 'cucumbers' || plant1 == 'onions')){
+        return true;
+    }
+    else if (plant2 == 'onions' && (plant1 == 'carrots' || plant1 == 'tomatoes')){
+        return true;
+    }    
     else {
         return false;
     }
