@@ -1,5 +1,5 @@
 public String formatName(String firstName, String lastName) {
-    if (!String.isBlank(firstName) && !String.isBlank(firstName)){
+    if (String.isBlank(firstName) && String.isBlank(firstName)){
         return '';
     }
     else if  (String.isBlank(firstName)){
