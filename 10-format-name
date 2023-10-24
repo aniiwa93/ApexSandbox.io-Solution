@@ -1,14 +1,15 @@
 public String formatName(String firstName, String lastName) {
     if (!String.isBlank(firstName) && !String.isBlank(firstName)){
-        return lastName + ', ' + firstName;
+        return '';
     }
-    else if  (!String.isBlank(firstName) && String.isBlank(firstName)){
-        return firstName;
-    }
-    else if  (String.isBlank(firstName) && !String.isBlank(firstName)){
+    else if  (String.isBlank(firstName)){
         return lastName;
     }
+    else if  (String.isBlank(firstName)){
+        return firstName;
+    }
     else {
-        return '';
+        return lastName + ', ' + firstName;
+
     }
 }
