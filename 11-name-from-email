@@ -1,0 +1,9 @@
+public String nameFromEmail(String email) {
+    String firstName = substringBefore(.);
+    String lastName = substringBetween(.,@);
+    toLowerCase(firstName);
+    toLowerCase(lastName);
+    capitalize(firstName);
+    capitalize(lastName);
+    return firstName + ' ' + lastName
+}
