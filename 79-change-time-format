@@ -1,13 +1,20 @@
 public String changeTimeFormat(String strTime) {
     list<String> table = strTime.split(:);
-    String sa = table[0];
-    String sb = table[1];
-    Integer a = Integer.valueOf[sa];
-    Integer b = Integer.valueOf[sb];
-    if(sa>11) {
-        return a+':'+b+' PM'
+    String hours = table[0];
+    String minutes = table[1];
+    Integer newhours = Integer.valueOf(hours);
+    if(newhours == 0) {
+        return '12'+':'+newminutes+' AM'
+    }
+    else if(newhours == 12) {
+        return '12'+':'+newminutes+' PM'
+    }
+    else if(newhours<12) {
+        return newhours +':'+ minutes+ ' AM'
     }
     else {
-        return a+':'+b+' AM'
+        newhours -=12;
+        a = String.valueOf(intHours).leftPad(2,'0');
+        return a + ':' + minutes + ' PM';
     }
 }
