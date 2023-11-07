@@ -8,8 +8,10 @@ public String reverseWordsInASentence(String sentence){
 
     sentence.reverse();
     List <String> lista = sentence.split(' ');
+    List <String> listaReversed = List<String>();
     for (Integer i = 0; i < lista.size(); i++){
         i.reverse();
+        listaReversed.add(i);
     }
-    join(lista,'')
+    join(listaReversed,' ')
 }
