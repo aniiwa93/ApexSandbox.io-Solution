@@ -11,5 +11,5 @@ public String reverseWordsInASentence(String sentence){
     for (Integer i = 0; i < lista.size(); i++){
         i.reverse();
     }
-    join(lista,' ')
+    join(lista,'')
 }
