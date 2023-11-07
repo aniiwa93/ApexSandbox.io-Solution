@@ -14,7 +14,7 @@ public String changeTimeFormat(String strTime) {
     }
     else {
         newhours -=12;
-        a = String.valueOf(intHours).leftPad(2,'0');
+        a = String.valueOf(newhours).leftPad(2,'0');
         return a + ':' + minutes + ' PM';
     }
 }
