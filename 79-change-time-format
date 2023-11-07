@@ -2,19 +2,19 @@ public String changeTimeFormat(String strTime) {
     list<String> table = strTime.split(:);
     String hours = table[0];
     String minutes = table[1];
-    Integer newhours = Integer.valueOf(hours);
-    if(newhours == 0) {
-        return '12'+':'+newminutes+' AM'
+    Integer intHours = Integer.valueOf(hours);
+    if(intHours == 0) {
+        return '12'+':'+minutes+' AM'
     }
-    else if(newhours == 12) {
-        return '12'+':'+newminutes+' PM'
+    else if(intHours == 12) {
+        return '12'+':'+minutes+' PM'
     }
-    else if(newhours<12) {
-        return newhours +':'+ minutes+ ' AM'
+    else if(intHours<12) {
+        return intHours +':'+ minutes+ ' AM'
     }
     else {
         newhours -=12;
-        a = String.valueOf(newhours).leftPad(2,'0');
-        return a + ':' + minutes + ' PM';
+        hours = String.valueOf(intHours).leftPad(2,'0');
+        return hours + ':' + minutes + ' PM';
     }
 }
