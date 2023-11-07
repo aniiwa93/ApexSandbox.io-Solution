@@ -1,7 +1,6 @@
 public String changeTimeFormat(String strTime) {
-    list<String> table = strTime.split(:);
-    String hours = table[0];
-    String minutes = table[1];
+    String hours = strTime.substringBefore(':');
+    String minutes = strTime.substringAfter(':');
     Integer intHours = Integer.valueOf(hours);
 
     if(intHours == 0) {
