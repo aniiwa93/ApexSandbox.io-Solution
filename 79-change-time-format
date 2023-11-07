@@ -1,0 +1,13 @@
+public String changeTimeFormat(String strTime) {
+    list<String> table = strTime.split(:);
+    String sa = table[0];
+    String sb = table[1];
+    Integer a = Integer.valueOf[sa];
+    Integer b = Integer.valueOf[sb];
+    if(sa>11) {
+        return a+':'+b+' PM'
+    }
+    else {
+        return a+':'+b+' AM'
+    }
+}
