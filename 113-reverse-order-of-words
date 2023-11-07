@@ -4,14 +4,16 @@ public String reverseWordsInASentence(String sentence){
     } else if (sentence == '') {
         return '';
     }
+    
+    List<String> words = sentence?.split(' ');
+    String reversed = '';
 
-
-    sentence.reverse();
-    List <String> lista = sentence.split(' ');
-    List <String> listaReversed = List<String>();
-    for (Integer i = 0; i < lista.size(); i++){
-        i.reverse();
-        listaReversed.add(i);
+    for (Integer i = words.size()-1; i >= 0; i--) {
+        if (reversed == '') {
+            reversed += words[i];
+        } else {
+            reversed += ' ' + words[i];
+        }
     }
-    join(listaReversed,' ')
+    return reversed;
 }
