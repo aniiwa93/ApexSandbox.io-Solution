@@ -4,13 +4,13 @@ public String changeTimeFormat(String strTime) {
     String minutes = table[1];
     Integer intHours = Integer.valueOf(hours);
     if(intHours == 0) {
-        return '12'+':'+minutes+' AM'
+        return '12'+':'+minutes+' AM';
     }
     else if(intHours == 12) {
-        return '12'+':'+minutes+' PM'
+        return '12'+':'+minutes+' PM';
     }
     else if(intHours<12) {
-        return intHours +':'+ minutes+ ' AM'
+        return intHours + ':' + minutes+ ' AM';
     }
     else {
         newhours -=12;
