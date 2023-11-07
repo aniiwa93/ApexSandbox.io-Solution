@@ -3,10 +3,11 @@ public Integer nextPrime(Integer num) {
         return 2;
     }
     Integer candidate = num + 1;
-    while (!isPrime(candidate)){
+    while (!isPrime(candidate)) {
         candidate += 1;
     }
     return candidate;
+}
     
 public Boolean isPrime(Integer candidate) {
     for (Integer i = 2; i < candidate; i++){
