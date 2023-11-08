@@ -1,9 +1,8 @@
 public static Integer arraySum(List<Integer> numbers) {
-    Integer arraySum = 0;
+    Integer sum = 0;
     for(i = 0; i < numbers.size(); i++){
-        Integer num = numbers[i];
-        arraySum += num;
-
+       sum += numbers[i];
+           return arraySum;
     }
-    return arraySum;
+
 }
