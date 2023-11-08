@@ -1,5 +1,13 @@
 public void insertAtStart(String cityName, List<String> cities) {
-    if (cities != null) {
-        cities.add(0, element);
+    if (cities.isEmpty()) {
+
+        cities.add(cityName);
+
+        }
+
+    else {
+
+        cities.add(0,cityName);
+
     }
 }
