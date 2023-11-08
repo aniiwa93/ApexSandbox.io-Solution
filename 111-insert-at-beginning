@@ -1,6 +1,6 @@
 public void insertAtStart(String cityName, List<String> cities) {
-    for(Integer i = cities.size(); i >= 0; i--){
-        cities.set((i += 1) ; cities[i] );
+    for(Integer i = 0; i < cities.size(); i++){
+        cities.set((i + 1) ; cities[i] );
     }
 cities.add(0; cityName);
 return cities;
