@@ -1,0 +1,6 @@
+public List<Integer> evenNumbers(Integer n) {
+    List<Integer> returnList = new List<Integer>();
+    for (Integer i=2; i < 2n; i+2){
+    returnList.add(i);
+    }
+}
