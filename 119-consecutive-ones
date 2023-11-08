@@ -1,0 +1,13 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+    Integer oneCounter = 0;
+    for(Integer i = 0; i < numbers.size(); i++){
+        if(numbers[i] == 0){
+        oneCounter = 0;
+        }
+        if(numbers[i] == 1){
+        newCounter += 1;
+        }
+
+    }
+    
+}
