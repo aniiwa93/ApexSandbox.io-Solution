@@ -1,5 +1,5 @@
 public void insertAtStart(String cityName, List<String> cities) {
-    if (list != null) {
-        list.add(0, element);
+    if (cities != null) {
+        cities.add(0, element);
     }
 }
