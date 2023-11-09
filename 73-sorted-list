@@ -1,25 +1,24 @@
 public boolean isSorted(List<Integer> numbers) {
-    if(numbers == null || numbers.isEmpty())
-
+    if(numbers == null || numbers.isEmpty()){
         return true;
-
-    if (numbers[2] !> numbers[1] !> numbers[0]){
-    for(Integer i = 3; i < numbers.size(); i++){
-        if(numbers[i] !> numbers[i-1]){
-        }
-        else {
-            return false;
-        }
     }
+    if(numbers.size() < 3){
+        return true;
     }
-    if (numbers[2] !< numbers[1] !< numbers[0]){
-    for(Integer j = 3; j<numbers.size(); j++) {
-        if(numbers[j] !< numbers[j-1]{
-
-        })
-        else{
-            return false;
+        Boolean descend = true;
+        Boolean ascend = true;
+    for(Integer i = 0; i < numbers.size(); i++){
+        if(numbers[i] == numbers[i+1]){
+        continue;
         }
-    }
-}
-}
+        else if(numbers[i] < numbers[i+1]){
+            descend = false;
+        }
+        else if(numbers[i] > numbers[i+1]){
+            ascend = false;
+        }
+        if (!ascend && !descend){
+            break;
+        }
+        }
+return (ascend || descend);
