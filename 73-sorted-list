@@ -1,4 +1,8 @@
 public boolean isSorted(List<Integer> numbers) {
+    if(numbers == null || numbers.isEmpty())
+
+        return true;
+
     if (numbers[2] !> numbers[1] !> numbers[0]){
     for(Integer i = 3; i < numbers.size(); i++){
         if(numbers[i] !> numbers[i-1]){
