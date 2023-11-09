@@ -5,10 +5,8 @@ public List<Integer> fibonacciSeries(Integer n) {
     if(n == 2){
         return nowyFibonacci;
     }
-    if (n > 2){
     for(Integer i = 2; i < n; i++){
         nowyFibonacci.add(nowyFibonacci[i-1] + nowyFibonacci[i-2]);
-    }
     }
     return nowyFibonacci;
 }
