@@ -1,15 +1,13 @@
 public List<Integer> fibonacciSeries(Integer n) {
-    List<Integer> nowyFibonacci = new List<Integer>();
+    List<Integer> nowyFibonacci = new List<Integer> {1, 1};
     if(n == 1){
-        return 1;
+        return new List<Integer> {1};
     if(n == 2){
-        nowyFibonacci.add(1);
-        nowyFibonacci.add(1);
         return nowyFibonacci;
     }
     if (n > 2){
-    for(Integer i = 0; i < n; i++){
-        nowyFibonacci.add(fibonacciSeries[i]);
+    for(Integer i = 2; i < n; i++){
+        nowyFibonacci.add(nowyFibonacci[i] + nowyFibonacci[i-1]);
     }
     }
     return nowyFibonacci;
