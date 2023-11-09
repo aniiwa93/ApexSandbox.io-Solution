@@ -2,9 +2,6 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> nowyFibonacci = new List<Integer> {1, 1};
     if(n == 1){
         return new List<Integer> {1};
-    if(n == 2){
-        return nowyFibonacci;
-    }
     for(Integer i = 2; i < n; i++){
         nowyFibonacci.add(nowyFibonacci[i-1] + nowyFibonacci[i-2]);
     }
