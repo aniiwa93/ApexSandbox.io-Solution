@@ -1,5 +1,5 @@
 public boolean isSorted(List<Integer> numbers) {
-    if(numbers == null || numbers.isEmpty()){
+    if(numbers?.size() == null) {
         return true;
     }
     if(numbers.size() < 3){
@@ -7,7 +7,8 @@ public boolean isSorted(List<Integer> numbers) {
     }
         Boolean descend = true;
         Boolean ascend = true;
-    for(Integer i = 0; i < numbers.size(); i++){
+
+    for(Integer i = 0; i < numbers.size() - 1; i++){
         if(numbers[i] == numbers[i+1]){
         continue;
         }
