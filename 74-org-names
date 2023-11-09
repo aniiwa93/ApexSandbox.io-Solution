@@ -1,16 +1,9 @@
 public List<String> orgNames(List<String> adjectives, List<String> animals) {
-    if (adjectives == null){
-        return animals;
-    }
-    if (animals == null){
-        return adjectives;
-    }
-    if (animals == null && adjectives == null){
-        return null;
-    }
     List<String> nazwy = new List<String>();
     for(Integer i = 0; i<adjectives.size(); i++){
-        nazwy.add(adjectives[i] + '-' + animals[i]);
+        for(Integer j = 0; j<animals.size(), j++){
+            nazwy.add(adjectives[i] + '-' + animals[j]);
+        }
     }
         return nazwy;
 }
