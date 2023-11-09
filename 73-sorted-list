@@ -1,7 +1,7 @@
 public boolean isSorted(List<Integer> numbers) {
     if (numbers[2] !> numbers[1] !> numbers[0]){
     for(Integer i = 3; i < numbers.size(); i++){
-        if(numbers[i] !> numbers[i+1]){
+        if(numbers[i] !> numbers[i-1]){
         }
         else {
             return false;
@@ -10,7 +10,7 @@ public boolean isSorted(List<Integer> numbers) {
     }
     if (numbers[2] !< numbers[1] !< numbers[0]){
     for(Integer j = 3; j<numbers.size(); j++) {
-        if(numbers[j] !< numbers[j+1]{
+        if(numbers[j] !< numbers[j-1]{
 
         })
         else{
