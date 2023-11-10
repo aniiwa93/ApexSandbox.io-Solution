@@ -3,3 +3,4 @@ public Integer secondLargest(List<Integer> numbers) {
     List<Integer> n = new List<Integer>(s);
     n.sort();
     return n[n.size() - 2];
+}
