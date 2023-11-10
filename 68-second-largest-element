@@ -1,0 +1,14 @@
+public Integer secondLargest(List<Integer> numbers) {
+    List<Integer> malejaca = new List<Integer>();
+    if(numbers != null){
+        numbers.sort();
+        for (Integer i = numbers.size()-1; i >= 0; i++){
+            malejaca.add(numbers[i]);
+        }
+        
+        return numbers[1];
+
+    }
+    else {
+        return null;
+    }
