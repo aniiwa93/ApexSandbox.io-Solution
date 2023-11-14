@@ -1,8 +1,8 @@
 public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
     Set<Integer> set3 = new Set<Integer>();
-    for(Integer i = 0; i < set1.size(); i++){
-    if(set2.contains(set1[i]){
-        set3.add(set1[i]);
+    for(num : set1){
+    if(set2.contains(num){
+        set3.add(num);
     }
 }
 return set3;
