@@ -1,8 +1,8 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     Set<Id> oppsAccountId = new Set<Id>();
-    for (Integer num : opps){
-        if(Opportunity.AccountId != empty){
-            oppsAccountId.add(num);
+    for (Opportunity num : opps){
+        if(num.AccountId != null){
+            oppsAccountId.add(num.AccountId);
         }
-return oppsAccountId
+return oppsAccountId;
 }
