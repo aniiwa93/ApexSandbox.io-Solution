@@ -4,6 +4,7 @@ public Set<Id> accountIds(List<Opportunity> opps) {
         if(num.AccountId != null){
             ids.add(num.AccountId);
         }
+    }
 return ids;
 }
 
