@@ -4,10 +4,10 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
 
     for(Integer n : set1){
         if(set2.contains(n){
-            return true;
         }
         else {
             return false;
         }
       }
+      return true;
     }
