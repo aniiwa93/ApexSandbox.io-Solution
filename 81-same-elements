@@ -1,10 +1,9 @@
 public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
-    Integer rozmiar1 = nums1.size();
-    Integer rozmiar2 = nums1.size();
+    Set<Integer> set1 = new Set<Integer>(nums1);
+    Set<Integer> set2 = new Set<Integer>(nums2);
 
-    if (rozmiar1 >= rozmiar2){
-    for(Integer i = 0; i < nums1.size(); i++){
-        if(nums2.contains(nums1[i])){
+    for(Integer n : set1){
+        if(set2.contains(n){
             return true;
         }
         else {
@@ -12,17 +11,3 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
         }
       }
     }
-
-    if (rozmiar2 > rozmiar1){
-    for(Integer i = 0; i < nums2.size(); i++){
-        if(nums1.contains(nums2[i])){
-            return true;
-        }
-        else {
-            return false;
-        }
-      }
-    }
-
-
-}
